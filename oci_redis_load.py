@@ -8,13 +8,13 @@ logging.basicConfig(level=logging.DEBUG)
 
 # Connect to Redis
 redis_client = redis.StrictRedis(
-    host='amaaaaaap77apcqandw5nv2266miqop6d3adkg3zbcwdpykfnqf24ge66t3a-p.redis.ap-mumbai-1.oci.oraclecloud.com',
+    host='*****.ap-mumbai-1.oci.oraclecloud.com',
     charset='utf-8',
     ssl=True,
     decode_responses=True,
     port=6379
 )
-redis_client_replica = redis.StrictRedis(host='amaaaaaap77apcqandw5nv2266miqop6d3adkg3zbcwdpykfnqf24ge66t3a-r.redis.ap-mumbai-1.oci.oraclecloud.com', charset='utf-8', ssl=True, decode_responses=True, port=6379)
+redis_client_replica = redis.StrictRedis(host='***.ap-mumbai-1.oci.oraclecloud.com', charset='utf-8', ssl=True, decode_responses=True, port=6379)
 
 def random_string(length):
     return ''.join(random.choice(string.ascii_letters) for _ in range(length))
